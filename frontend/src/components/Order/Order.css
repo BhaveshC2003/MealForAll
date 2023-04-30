@@ -1,0 +1,45 @@
+.ecom__order{
+    width: 100vw;
+    min-height: 100vh;
+    padding: 3vmax 1vmax;
+}
+
+.ecom__order-details-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 2vmax;
+}
+
+.ecom__order-details-container > p{
+    align-self: center;
+    font-size: 1.5vmax;
+    color: tomato;
+}
+
+.order-details-shipping-details{
+    display: flex;
+    flex-direction: row;
+    margin: 0.25vmax 0;
+}
+
+.order-details-shipping-details > p{
+    color: tomato;
+}
+.order-details-shipping-details > span{
+    display: inline-block;
+    margin-left: 3px;
+}
+.order-details-shipping-details > *{
+    font-size: 1.1vmax;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+}
+
+.order-items{
+    padding: 2vmax;
+}
+
+

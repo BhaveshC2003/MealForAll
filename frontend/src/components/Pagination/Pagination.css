@@ -1,0 +1,33 @@
+.ecom__pagination{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin: 10px 0;
+}
+
+.ecom__pagination ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    cursor: pointer;
+}
+
+.pagination-number{
+    border: solid 1px black;
+    display: inline-block;
+    padding: 5px 8px;
+}
+
+.ecom__pagination ul li:first-child,.ecom__pagination ul li:last-child{
+    border: solid 1px black;
+    padding: 5px;
+}
+
+.ecom__pagination ul li:hover{
+    background-color: rgb(245, 231, 231);
+}
+
+.pagination-active{
+    background-color: tomato;
+}

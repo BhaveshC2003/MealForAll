@@ -1,0 +1,172 @@
+.ecom__productDetails{
+    width: 100vw;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ecom__productDetails-container{
+    width: 100%;
+    height: 100vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ecom__productDetails-container>*{
+    flex: 1;
+}
+
+.ecom__productDetails-container-left{
+    height: 100%;
+    width: 100%;
+    padding: 85px 0;
+    margin: 20px;
+}
+
+.ecom__productDetails-container-left > div{
+    height: 100%;
+    width: 100%;
+}
+
+.ecom__productDetails-container-left img{
+    width: 50%;
+    border-radius: 10px;
+}
+
+.image-container{
+    display: flex;
+    justify-content: center;
+}
+
+.ecom__productDetails-container-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.product-name h2{
+    font-size: 30px;
+}
+.product-name p{
+    color: grey;
+    margin: 3px 0;
+    font-size: 12px;
+}
+
+.product-ratings{
+    margin: 3px 0;
+}
+.product-ratings p{
+    color: grey;
+    font-size: 15px;
+}
+
+.ecom__productDetails-container-right h1{
+    margin: 6px 0;
+}
+
+.product-add-to-cart{
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.product-add-to-cart >*,.product-submit-review > button{
+    height: 75%;
+    width: 30px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background-color: crimson;
+    color: white;
+}
+.product-add-to-cart > input{
+    text-align: center;
+    cursor: text;
+    outline: none;
+    background-color: white;
+    border-radius: 0;
+    color: black;
+}
+
+.add-to-cart-btn,.product-submit-review > button{
+    background-color: crimson;
+    margin-left: 25px;
+    width: auto;
+    padding: 8px 12px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.stock-green,.stock-red{
+    display: inline-block;
+    margin: 8px 0;
+    font-size: 25px;
+    font-weight: 600;
+}
+.stock-green{
+    color: rgb(45, 230, 45);
+}
+.stock-red{
+    color: red;
+}
+.product-description > p{
+    margin: 8px 0;
+    font-size: 18px;
+}
+.product-submit-review{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-submit-review > textarea{
+    padding: 0 3px;
+    width: 45%;
+    min-height: 10vmin;
+    resize: none;
+    outline: none;
+    border: none;
+    border-bottom: solid 2px tomato;
+    font-size: 1.2vmax;
+}
+
+.product-submit-review > button{
+    width: 25%;
+    margin: 10px 0;
+}
+
+.product-reviews{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+/*media query*/
+@media (max-width:900px){
+    .ecom__productDetails-container{
+        flex-direction: column;
+        
+    }
+    .ecom__productDetails-container-left{
+        width: 100%;
+        height: 100%;
+        padding: 0 60px;
+    }
+    .ecom__productDetails-container-left img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+
+
+
+

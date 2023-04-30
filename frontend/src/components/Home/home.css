@@ -1,0 +1,68 @@
+.ecom__home{
+    height: 100vmin;
+    width: 100vw;
+    background-image: url("../../images/home.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    perspective: 800px;
+    position: relative;
+}
+
+.ecom__home::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+
+}
+
+.ecom__home > h3{
+    color: white;
+    font-size: 3vmax;
+    margin: 10px 0;
+}
+
+.ecom__home > h1{
+    text-align: center;
+    color: white;
+    margin: 10px 0;
+}
+
+.ecom__home-container{
+    width: auto;
+    height: auto;
+    position: relative;
+}
+.ecom__home-container > button{
+    padding: 8px 12px;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 0.25s ease-in;
+}
+
+
+.ecom__home-container button:hover{
+    transform: translateZ(50px) translateY(10px) translateX(10px);
+}
+
+.ecom__home-container span{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border: solid 2px white;
+    position: absolute;
+    z-index: -1;
+}
+
+.ecom__home-featured-product-heading{
+    color: white;
+    display: flex;
+    align-items: flex-end;
+}
+

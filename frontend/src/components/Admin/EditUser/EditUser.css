@@ -1,0 +1,60 @@
+.ecom__edit-user{
+    max-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 1vmax;
+}
+
+.edit-user-image{
+    flex: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.edit-user-image > img{
+    width: 30%;
+    border-radius: 50%;
+}
+
+.edit-user-container{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 1vmax;
+}
+
+.edit-user-container > p{
+    font-size: 1.8vmax;
+    color: tomato;
+    text-align: center;
+}
+.edit-user-container > div{
+    height: 15vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.edit-user-container > div > p{
+    font-size: 1.5vmax;
+    margin-right: 5px;
+}
+
+.edit-user-container > div > input{
+    border: none;
+    border-bottom: solid 2px tomato;
+    font-size: 1.5vmax;
+    outline: none;
+}
+
+.edit-user-container > div > button{
+    width: 25%;
+    font-size: 1.8vmax;
+    border: none;
+    background-color: rgb(49, 48, 48);
+    color: white;
+    padding: 0.8vmax;
+    cursor: pointer;
+}

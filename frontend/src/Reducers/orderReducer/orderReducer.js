@@ -1,0 +1,178 @@
+import {createReducer} from '@reduxjs/toolkit'
+
+export const newOrderReducer = createReducer({},{
+    PLACE_ORDER_REQUEST:(state,action)=>{
+        return{
+            ...state,
+            loading:true
+        }
+    },
+    PLACE_ORDER_SUCCESS:(state,action)=>{
+        return{
+            ...state,
+            order: action.payload,
+            loading: false
+        }
+    },
+    PLACE_ORDER_FAIL:(state,action)=>{
+        return{
+            ...state,
+            loading:false,
+            error:action.payload
+        }
+    },
+    SCHEDULED_PICKUP_REQUEST:(state,action)=>{
+        return{
+            ...state,
+            loading:true,
+            success:false
+        }
+    },
+    SCHEDULED_PICKUP_SUCCESS:(state,action)=>{
+        return{
+            ...state,
+            loading:false,
+            success:true,
+            message:"Pickup scheduled successfully"
+        }
+    },
+    SCHEDULED_PICKUP_FAIL:(state,action)=>{
+        return{
+            ...state,
+            loading:false,
+            success:false,
+            error:action.payload
+        }
+    },
+    RESET_SUCCESS:(state,action)=>{
+        return{
+            ...state,
+            success:false
+        }
+    }
+})
+
+export const myOrdersReducer = createReducer({orders:[]},{
+    MY_ORDERS_REQUEST:(state,action)=>{
+        return{
+            ...state,
+            loading:true
+        }
+    },
+    MY_ORDERS_SUCCESS:(state,action)=>{
+        return{
+            ...state,
+            loading:false,
+            orders:action.payload
+        }
+    },
+    MY_ORDERS_FAIL:(state,action)=>{
+        return{
+            ...state,
+            loading:false,
+            error:action.payload
+        }
+    }
+})
+
+export const orderDetailsReducer = createReducer({},{
+    ORDER_DETAILS_REQUEST:(state,action)=>{
+        return{
+            ...state,
+            loading:true
+        }
+    },
+    ORDER_DETAILS_SUCCESS:(state,action)=>{
+        return{
+            ...state,
+            loading:false,
+            order:action.payload.order,
+            success:action.payload.success
+        }
+    },
+    ORDER_DETAILS_FAIL:(state,action)=>{
+        return{
+            ...state,
+            loading:false,
+            error:action.payload,
+            success:false
+        }
+    },
+    UPDATE_ORDER_REQUEST:(state,action)=>{
+        return{
+            ...state,
+            loading:true,
+        }
+    },
+    UPDATE_ORDER_SUCCESS:(state,action)=>{
+        return{
+            ...state,
+            isUpdated:action.payload,
+            loading:false
+        }
+    },
+    UPDATE_ORDER_FAIL:(state,action)=>{
+        return{
+            ...state,
+            isUpdated:false,
+            loading:false
+        }
+    },
+    UPDATE_ORDER_RESET:(state,action)=>{
+        return{
+            ...state,
+            isUpdated:false
+        }
+    }
+})
+
+//Getting all order --Admin
+export const allOrdersReducer = createReducer({},{
+    ALL_ORDERS_REQUEST:(state,action)=>{
+        return{
+            ...state,
+            loading:true
+        }
+    },
+    ALL_ORDERS_SUCCESS:(state,action)=>{
+        return{
+            ...state,
+            loading:false,
+            orders:action.payload
+        }
+    },
+    ALL_ORDERS_FAIL:(state,action)=>{
+        return{
+            ...state,
+            loading:false,
+            error:action.payload
+        }
+    },
+    DELETE_ORDER_REQUEST:(state,action)=>{
+        return{
+            ...state,
+            loading:true
+        }
+    },
+    DELETE_ORDER_SUCCESS:(state,action)=>{
+        return{
+            ...state,
+            isDeleted:action.payload,
+            loading:false
+        }
+    },
+    DELETE_ORDER_FAIL:(state,action)=>{
+        return{
+            ...state,
+            loading:false,
+            isDeleted:false,
+            error:action.payload
+        }
+    },
+    DELETE_ORDER_RESET:(state,action)=>{
+        return{
+            ...state,
+            isDeleted:false
+        }
+    }
+})

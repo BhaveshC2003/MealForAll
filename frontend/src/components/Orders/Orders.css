@@ -1,0 +1,13 @@
+.ecom__orders{
+    width: 100%;
+    height: 100vh;
+    padding: 3vmax 1vmax;
+}
+
+.greenColor{
+    color: green;
+}
+
+.redColor{
+    color: red;
+}

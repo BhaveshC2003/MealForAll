@@ -1,0 +1,80 @@
+.ecom__edit-order{
+    min-height: 100vh;
+    max-width: 100vw;
+    padding: 1vmax;
+}
+
+.edit-order-details{
+    width: 100%;
+    padding: 1vmax;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.edit-order-details > div{
+    width: 30%;
+    margin: auto 0;
+}
+.edit-order-details > div p{
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 1.3vmax;
+}
+.ecom__edit-order > div input, .ecom__edit-order > div select{
+    font-size: 1.3vmax;
+    border: none;
+    border-bottom: solid 2px tomato;
+   width: 100%;
+   outline: none;
+}
+
+.edit-order-payment{
+    width: 100%;
+}
+.edit-order-payment > p{
+    font-size: 1.4vmax;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0.4vmax;
+}
+
+.edit-order-payment > div p{
+    margin: 6px 0;
+}
+
+.edit-order-payment > div p,.edit-order-payment > div b{
+    font-size: 1.3vmax;
+}
+
+.edit-order-payment > div > p:nth-child(1) > b{
+    color: rgb(73, 69, 69);
+    margin: 5px;
+}
+
+.edit-order-payment > div > p:nth-child(2) > b{
+    text-transform: uppercase;
+}
+
+.edit-order-container{
+    width: 70%;
+    margin: 1.5vmax auto;
+}
+.edit-order-container > p{
+    width: 100%;
+    font-size: 1.5vmax;
+    text-align: center;
+    color: tomato;
+}
+
+.edit-order-container > button{
+    width: 25%;
+    border: none;
+    outline: none;
+    background-color: rgb(59, 56, 56);
+    color: white;
+    font-size: 1.8vmax;
+    padding: 0.8vmax;
+    cursor: pointer;
+    margin-left: calc(100% - 25%);
+}

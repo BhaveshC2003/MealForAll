@@ -1,0 +1,159 @@
+import { createReducer } from "@reduxjs/toolkit";
+
+export const loginReducer = createReducer({},{
+    LOGIN_REQUEST:(state,action)=>{
+        return {
+            ...state,
+            isAuthenticated:false,
+            loading:true
+        }
+    },
+    LOGIN_SUCCESS:(state,action)=>{
+        return{
+            isAuthenticated:true,
+            loading:false,
+            user:action.payload
+        }
+    },
+    LOGIN_FAIL:(state,action)=>{
+        return{
+            loading:false,
+            error:action.payload,
+            isAuthenticated:false,
+            user:null
+        }
+    },
+    REGISTER_REQUEST:(state,action)=>{
+        return{
+            loading:true,
+            isAuthenticated:false
+        }
+    },
+    REGISTER_SUCCESS:(state,action)=>{
+        return{
+            ...state,
+            isAuthenticated:true,
+            loading:false,
+            user:action.payload
+        }
+    },
+    REGISTER_FAIL:(state,action)=>{
+        return{
+            ...state,
+            isAuthenticated:false,
+            loading:false,
+            user:null
+        }
+    },
+    LOAD_USER_REQUEST:(state,action)=>{
+        return{
+            loading:true,
+            isAuthenticated:false
+        }
+    },
+    LOAD_USER_SUCCESS:(state,action)=>{
+        return{
+            ...state,
+            isAuthenticated:true,
+            loading:false,
+            user:action.payload
+        }
+    },
+    LOAD_USER_FAIL:(state,action)=>{
+        return{
+            ...state,
+            isAuthenticated:false,
+            loading:false,
+            user:null
+        }
+    },
+    LOGOUT_SUCCESS:(state,action)=>{
+        return{
+            ...state,
+            user:null,
+            isAuthenticated:false
+        }
+    },
+    LOGOUT_FAIL:(state,action)=>{
+        return{
+            ...state
+        }
+    }
+   
+})
+
+//Getting all users --Admin
+export const allUserReducer = createReducer({},{
+    ALL_USERS_REQUEST:(state,action)=>{
+        return{
+            ...state,
+            loading:true
+        }
+    },
+    ALL_USERS_SUCCESS:(state,action)=>{
+        return{
+            ...state,
+            loading:false,
+            users:action.payload
+        }
+    },
+    ALL_USERS_FAIL:(state,action)=>{
+        return{
+            ...state,
+            loading:false,
+            error:action.payload
+        }
+    }
+})
+
+//Getting single user details --Admin
+export const userDetailsReducer = createReducer({},{
+    USER_DETAILS_REQUEST:(state,action)=>{
+        return{
+            ...state,
+            loading:true
+        }
+    },
+    USER_DETAILS_SUCCESS:(state,action)=>{
+        return{
+            ...state,
+            loading:false,
+            user:action.payload
+        }
+    },
+    USER_DETAILS_FAIL:(state,action)=>{
+        return{
+            ...state,
+            loading:false,
+            error:action.payload
+        }
+    },
+    UPDATE_USER_REQUEST:(state,action)=>{
+        return{
+            ...state,
+            loading:true
+        }
+    },
+    UPDATE_USER_SUCCESS:(state,action)=>{
+        return{
+            ...state,
+            loading:false,
+            isUpdated:action.payload,
+        }
+    },
+    UPDATE_USER_FAIL:(state,action)=>{
+        return{
+            ...state,
+            loading:false,
+            isUpdated:false,
+            error:action.payload
+        }
+    },
+    UPDATE_USER_RESET:(state,action)=>{
+        return{
+            ...state,
+            isUpdated:false
+        }
+    }
+})
+

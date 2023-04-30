@@ -1,0 +1,63 @@
+import { createReducer } from "@reduxjs/toolkit";
+
+export  const profileReducer = createReducer({},{
+        UPDATE_PROFILE_REQUEST:(state,action)=>{
+            return{
+                ...state,
+                loading:true,
+            }   
+    },
+        UPDATE_PROFILE_SUCCESS:(state,action)=>{
+            return{
+                ...state,
+                isUpdated:action.payload,
+                loading:false
+            }
+        },
+        UPDATE_PROFILE_FAIL:(state,action)=>{
+            return{
+                ...state,
+                loading:false,
+                error:action.payload
+            }
+        },
+        UPDATE_PROFILE_RESET:(state,action)=>{
+            return{
+                ...state,
+                isUpdated:false
+            }
+        },
+        UPDATE_PASSWORD_REQUEST:(state,action)=>{
+            return{
+                ...state,
+                loading:true,
+            }
+        },
+        UPDATE_PASSWORD_SUCCESS:(state,action)=>{
+                return{
+                    ...state,
+                    isUpdated:action.payload,
+                    loading:false
+                }
+            },
+        UPDATE_PASSWORD_FAIL:(state,action)=>{
+                return{
+                    ...state,
+                    loading:false,
+                    error:action.payload
+                }
+            },
+        UPDATE_PASSWORD_RESET:(state,action)=>{
+                return{
+                    ...state,
+                    isUpdated:false
+                }
+            },
+            CLEAR_ERRORS:(state,action)=>{
+                return{
+                    ...state,
+                    error:null
+                }
+            }    
+    
+})

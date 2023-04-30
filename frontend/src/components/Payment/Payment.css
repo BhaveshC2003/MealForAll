@@ -1,0 +1,52 @@
+.ecom__payment{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.ecom__payment >:nth-child(1){
+    font-size: 20px;
+    margin: 1vmax 0;
+}
+
+.ecom__payment > form{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.ecom__payment > form > div{
+    width: 40%;
+    position: relative;
+    margin: 1vmax 0;
+}
+
+.payment-input{
+    width: 100%;
+    padding: 1vmax 0;
+    padding-left: 2vmax;
+    font-size: 18px;
+    border: none;
+    border-bottom: solid 2px tomato;
+}
+
+.payment-icon{
+    position: absolute;
+    top: 45%;
+}
+
+.ecom__payment > form > button{
+    width: 35%;
+    padding: 1vmax;
+    font-size: 18px;
+    background-color: rgb(29, 27, 27);
+    color: white;
+    border: none;
+    margin: 0 auto;
+    cursor: pointer;
+}

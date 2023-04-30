@@ -1,0 +1,18 @@
+.ecom__order-success{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.ecom__order-success >:nth-child(2){
+    font-size: 2vmax;
+    margin: 1vmax 0;
+}
+
+.ecom__order-success >:nth-child(3){
+    text-decoration: none;
+    color: tomato;
+    font-size: 1.2vmax;
+}

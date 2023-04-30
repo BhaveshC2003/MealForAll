@@ -1,0 +1,93 @@
+.ecom__dashboard{
+    max-width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    position: absolute;
+}
+
+.dashboard-container{
+    background-color: rgb(206, 218, 212);
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard-container > h1{
+    width: 100%;
+    background-color: tomato;
+    color: white;
+    font-size: 2vmax;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: solid 2px white;
+    padding: 0.4vmax;
+}
+
+.dashboard-amount{
+    padding: 0.4vmax;
+    width: 100%;
+    background-color: tomato;
+}
+
+.dashboard-amount > p{
+    font-size: 1.5vmax;
+    width: fit-content;
+    display: block;
+    color: white;
+    margin: auto;
+}
+
+.dashboard-details{
+    width: 100%;
+    display: flex;
+}
+
+.dashboard-details > div{
+    width: 14vmax;
+    height: 14vmax;
+    margin: 2vmax auto;
+    border-radius: 50%;
+    transition: all 0.25s ease-out;
+}
+.dashboard-details > div:hover{
+    transform: scale(1.08);
+}
+
+
+.dashboard-details div:nth-child(1){
+    background-color: dodgerblue;
+}
+
+.dashboard-details div:nth-child(2){
+    background-color: rgb(245, 63, 8);
+}
+
+.dashboard-details div:nth-child(3){
+    background-color: rgb(183, 0, 255);
+}
+
+.dashboard-details > div a{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+    font-size: 1.8vmax;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dashboard-line-chart{
+    width: 80%;
+    margin: 10px auto;
+}
+
+.dashboard-doughnut-chart{
+    width: 40%;
+    margin: 10px auto;
+}
+
+
+
+

@@ -1,0 +1,203 @@
+.ecom__login-sign{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background-color: rgb(224, 213, 213);
+}
+
+.ecom__login-sign-container{
+    background-color: white;
+    width: 30vmax;
+    height: 35vmax;
+    overflow: hidden;
+}
+.ecom__login-sign-switch{
+    display: flex;
+    padding: 10px 0;
+    position: relative;
+}
+.ecom__login-sign-switch > p{
+    flex: 1;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5vmax;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.ecom__login-sign-switch > span{
+    display:inline-block;
+    width: 50%;
+    height: 3px;
+    background-color: tomato;
+    position: absolute;
+    bottom: 0;
+    transition: all 0.3s linear;
+}
+
+.shiftSpanToLeft{
+    transform: translateX(100%);
+}
+
+.ecom__login-container{
+    padding: 3vmax;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: all 0.3s linear;
+}
+
+.ecom__login-container>*,.ecom__register-container>*{
+    margin: 15px 0;
+}
+
+.ecom__login-email,.ecom__login-password{
+    height: 15%;
+    width: 100%;
+    position: relative;
+}
+
+.ecom__login-email > input,.ecom__login-password > input{
+    height: 100%;
+    width: 100%;
+    padding-left: 35px;
+    border: solid 2px tomato;
+    border-radius: 5px;
+    outline: none;
+    font-size: 15px;
+}
+
+.login-icons{
+    position: absolute;
+    left: 7px;
+    top: 21%;
+}
+
+.ecom__login-btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 25px;
+}
+
+
+.ecom__login-btn >:first-child{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.3vmax;
+    text-decoration: none;
+    color: tomato;
+}
+
+.ecom__login-btn >:last-child{
+    background-color: tomato;
+    border: none;
+    flex: 0.25;
+    color: white;
+    font-size: 1.3vmax;
+    cursor: pointer;
+}
+
+.ecom__login-btn>:last-child:hover{
+    background-color: rgb(252, 84, 55);
+}
+
+.ecom__register-container{
+    height: 100%;
+    width: 100%;
+    padding: 1vmax 3vmax;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: all 0.3s linear;
+}
+
+.ecom__register-name,.ecom__register-email,.ecom__register-password{
+    width: 100%;
+    height: 8%;
+    position: relative;
+}
+
+.ecom__register-name>input,.ecom__register-email>input,.ecom__register-password>input{
+    height: 100%;
+    width: 100%;
+    padding-left: 35px;
+    border: solid 2px tomato;
+    border-radius: 5px;
+    outline: none;
+    font-size: 15px;
+}
+
+.ecom__register-avatar{
+    flex: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.ecom__register-avatar > img{
+    width: 10%;
+}
+
+.ecom__register-avatar > input::-webkit-file-upload-button{
+    background-color: tomato;
+    border: none;
+    padding: 0.5vmax;
+    font-size: 14px;
+    margin: 5px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.ecom__register-btn{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.ecom__register-btn > button{
+    width: 100%;
+    color: white;
+    font-size: 1.3vmax;
+    cursor: pointer;
+    background-color: tomato;
+    border: none;
+    padding: 0.5vmax;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.ecom__register-btn > button:hover{
+    background-color: rgb(247, 76, 46);
+}
+
+.register-icons{
+    position: absolute;
+    top: 20%;
+    left: 7px;
+}
+
+.removeLogin{
+    transform: translateY(-100%);
+    visibility: hidden;
+}
+
+.showRegister{
+    transform: translateY(-100%);
+}
+
+
+

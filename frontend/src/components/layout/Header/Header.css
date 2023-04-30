@@ -1,0 +1,99 @@
+.ecom__navbar{
+    max-height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    z-index: 2;
+}
+
+
+.ecom__navbar > span{
+    margin: -5px;
+    display: inline-block;
+    height: calc(25vh + 5px);
+    width: 100vw;
+    background-color: white;
+}
+
+.ecom__navbar span:nth-child(odd){
+    transform: translateX(-100%);
+    animation: animateOdd 0.5s ease-in forwards;
+}
+
+.ecom__navbar span:nth-child(even){
+    transform: translateX(100%);
+    animation: animateEven 0.5s ease-in forwards;
+}
+
+.menuIcon{
+    position: absolute;
+    z-index: 4;
+    cursor: pointer;
+    top: 6px;
+    left: 6px;
+    
+}
+
+@keyframes animateOdd{
+    to{
+        transform: translateX(0);
+    }
+}
+@keyframes animateEven {
+    to{
+        transform: translateX(0);
+    }
+}
+
+/*Styling container*/
+.ecom__navbar-container{
+    height: 100vh;
+    position: absolute;
+    z-index: 3;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.ecom__navbar-container > *{
+    flex: 1;
+}
+
+.ecom__navbar-logo{
+    padding: 5vmax;
+}
+
+.ecom__navbar-logo > img{
+    width: 100%;
+}
+
+.ecom__navbar-tags{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.linkTag{
+    text-decoration: none;
+    color: black;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+.ecom__navbar-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.ecom__navbar-icons >*{
+    margin: 0 12px;
+    cursor: pointer;
+}
+
+
+

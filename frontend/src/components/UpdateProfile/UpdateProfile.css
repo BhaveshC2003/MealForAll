@@ -1,0 +1,35 @@
+.profile-edit-image{
+    width: 100%;
+}
+.profile-edit-image::-webkit-file-upload-button{
+    width: 75%;
+    background-color: tomato;
+    border: none;
+    color: white;
+    padding: 0.75vmax 0;
+    font-size: 20px;
+    cursor: pointer;
+}
+.update-profile-input{
+    width: 50%;
+    border: none;
+    border-bottom: solid 2px tomato;
+    outline: none;
+    padding: 5px;
+    margin: 8px 0;
+    font-size: 15px;
+}
+
+.update-profile-right-btn{
+    width: 100%;
+}
+
+.update-profile-right-btn button{
+    width: 75%;
+    background-color: tomato;
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding: 0.8vmax 0;
+    cursor: pointer;
+}

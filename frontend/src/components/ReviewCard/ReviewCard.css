@@ -1,0 +1,30 @@
+.review-container{
+    display: flex;
+    flex-direction: column;
+    width: 25vmax;
+    height: 25vmax;
+    padding: 10px;
+    box-shadow: 2px 2px 5px grey;
+}
+
+.review-container > div{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.review-container > div >img {
+    height: 100%;
+}
+.review-container > div > span{
+    display: inline-block;
+    font-size: 25px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.review-container > p{
+    font-size: 20px;
+}

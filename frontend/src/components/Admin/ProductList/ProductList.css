@@ -1,0 +1,9 @@
+.ecom__admin-products{
+    max-width: 100vw;
+    height: 100vh;
+    padding: 5vmax 1vmax;
+}
+
+.ecom__admin-products a{
+    color: black;
+}

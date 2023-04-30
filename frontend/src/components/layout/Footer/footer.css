@@ -1,0 +1,131 @@
+.ecom__footer{
+    max-width: 100vw;
+    min-height: 10rem;
+    height: 45vh;
+    background-color: rgb(34,33,33);
+    display: flex;
+    padding: 20px 12px;
+}
+.ecom__footer > div{
+    height: 100%;
+    margin: 0 10px;
+}
+
+/*left*/
+.ecom__footer-left{
+    flex: 1;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.ecom__footer-left > img{
+    width: 13vw;
+    height: auto;
+    margin: 8px 0;
+    cursor: pointer;
+}
+
+.ecom__footer-left > h4{
+    font-size: 15px;
+    margin: 8px 0;
+}
+
+.ecom__footer-left > p{
+    text-align: center;
+    width: 75%;
+    font-size: 12px;
+    margin: 8px 0;
+}
+
+/*middle*/
+.ecom__footer-middle{
+    flex: 1.75;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;        
+}
+
+.ecom__footer-middle > h1{
+    font-size: 55px;
+    color: crimson;
+    margin: 10px 0;
+}
+
+.ecom__footer-middle > p{
+    color: white;
+    margin: 8px 0;
+    font-size: 12px;
+    text-align: center;
+}
+
+/*right*/
+.ecom__footer-right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ecom__footer-right > h4{
+    font-size: 18px;
+    margin: 0 0 10px 0;
+    color: white;
+}
+
+.ecom__footer-right > a{
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+.ecom__footer-right a:hover{
+    color: crimson;
+}
+
+
+/*media query*/
+@media (max-width: 900px) {
+    .ecom__footer{
+        width: 100vw;
+        height: max-content;
+    }
+    .ecom__footer-left{
+        flex: 1;
+        justify-content: center;
+    }
+    .ecom__footer-left > h4{
+        font-size: 10px;
+        text-align: center;
+        margin: 0;
+    }
+    .ecom__footer-left > p{
+        font-size: 8px;
+    }
+    .ecom__footer-left > img{
+        width: 25vw;
+        margin: 3px;
+    }
+    .ecom__footer-middle{
+        flex: 1;
+    }
+    .ecom__footer-middle > h1{
+        font-size: calc(100% + 5px);
+    }
+
+    .ecom__footer-right{
+        flex: 1;
+    }
+    .ecom__footer-right > h4{
+        font-size: 12px;
+    }
+    .ecom__footer-right > a{
+        font-size: 10px;
+        margin: 6px 0;
+    }
+}
